@@ -7,3 +7,6 @@
 import sys # будем использовать sys.argv
 import subprocess # думаю, что нужен будет subprocess.call
 
+# arg = sys.argv # получение аргументов из командной строки
+arg = str(input()) # пока пусть будет запрос на ввод имени программы
+print (arg) # чисто для теста смотрим, что там в этом arg
