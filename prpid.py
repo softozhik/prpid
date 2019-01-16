@@ -12,6 +12,6 @@ import subprocess  # думаю, что нужен будет Popnen()
 arg = sys.argv # получение аргументов из командной строки
 arg.pop(0)
 #print ((a for a in arg))
-launch = subprocess.Popen((a for a in arg))
+launch = subprocess.Popen(arg)
 print(launch.pid)
 #exit()
