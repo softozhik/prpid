@@ -15,6 +15,8 @@ arg.pop(0)
 #print ((a for a in arg))
 launch = subprocess.Popen(arg)
 print(launch.pid)
-time.sleep(10)
-launch.kill()
+try:
+    launch.wait()
+except KeyboardInterrupt:
+    launch.kill()
 #exit()
