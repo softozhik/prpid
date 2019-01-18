@@ -1,4 +1,4 @@
 # prpid назначение:
-запуск процесса, указанного в качестве аргумента вывод id запускаемого процесса
+Запуск процесса, указанного в качестве аргумента, и вывод PID запускаемого процесса
 
-start of the process specified as argument output of the process being started
+Start of the process specified as prpid's argument and print the PID of the started process
