@@ -17,11 +17,13 @@ args = sys.argv[1:] # получение аргументов из команд�
 if args:
     try:
         launch = subprocess.Popen(args)
-        print(launch.pid)
+        print ('PID:', launch.pid)
         try:
             launch.wait()
+            print ('Return code:', launch.returncode)
         except KeyboardInterrupt:
             launch.kill()
+            print ('\nReturn code:', launch.returncode)
     except FileNotFoundError:
         print ('o-ops! file not found...')
 
