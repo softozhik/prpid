@@ -26,6 +26,8 @@ if args:
             print ('\nReturn code:', launch.returncode)
     except FileNotFoundError:
         print ('o-ops! file not found...')
+    except PermissionError:
+        print ('o-ops! permission denied...')
 
 
 else:
