@@ -26,5 +26,5 @@ if len(arg) > 1:
 
 
 else:
-    print ('o-ops! nothing arguments...')
+    print ('o-ops! no arguments...')
 #exit()
