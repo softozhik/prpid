@@ -27,5 +27,5 @@ if args:
 
 
 else:
-    print ('o-ops! nothing arguments...')
+    print ('o-ops! no arguments...')
 #exit()
