@@ -10,12 +10,13 @@ import sys  # будем использовать sys.argv
 import subprocess  # думаю, что нужен будет Popnen()
 import time
 
-arg = sys.argv # получение аргументов из командной строки
+args = sys.argv[1:] # получение аргументов из командной строки
 #arg.pop(0)
 #print ((a for a in arg))
-if len(arg) > 1:
+
+if args:
     try:
-        launch = subprocess.Popen(arg[1:])
+        launch = subprocess.Popen(args)
         print(launch.pid)
         try:
             launch.wait()
