@@ -4,8 +4,8 @@
 Используются стандартные библиотеки `sys` и `subprocess`
 
 # примеры использования:
-`./prpid.py ls -A
-./prpid.py firefox ya.ru`
+`./prpid.py ls -A \n`
+`./prpid.py firefox ya.ru`
 
 Start of the process specified as prpid's argument and print the PID of the started process
 After starting it waits for the closure of the running process, or closes it by pressing Ctrl-C
